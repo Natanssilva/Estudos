@@ -185,7 +185,7 @@ listaNomes('natan', 'lucas', 'joao'); */
 
 //REST OPERATOR EM função
 
-function cadastrar(usuarios, ...novosUsuarios){ //rest operator aqui
+function cadastrar(usuarios, ...novosUsuarios){ //rest operator aqui para juntar
     let totalUsuarios = [     //codigo para receber e mostrar os usuarios e os novosUsuarios. Usando o Spread Operator tambem!
         ...usuarios,
         ...novosUsuarios
