@@ -154,7 +154,7 @@ let novaPessoa = {
 
 };
 
-console.log(novaPessoa)  vai mostrar desde 'natan' até 'barra velha'*/
+console.log(novaPessoa)  vai mostrar desde 'natan' até 'barra velha'
 
 //SPREAD OPERATOR COM FUNÇÕES
 
@@ -174,7 +174,28 @@ console.log(cadastroPessoa({
 }));
 
 
+//REST OPERATOR
+//Não sabe quantos nomes vao passar, pra ela poder receber e tratar X itens nessa função, pra isso serve o Rest Operator. Funciona com números também
 
+function listaNomes(...nomes){
+    console.log(nomes);
+}
+
+listaNomes('natan', 'lucas', 'joao'); */
+
+//REST OPERATOR EM função
+
+function cadastrar(usuarios, ...novosUsuarios){ //rest operator aqui
+    let totalUsuarios = [     //codigo para receber e mostrar os usuarios e os novosUsuarios. Usando o Spread Operator tambem!
+        ...usuarios,
+        ...novosUsuarios
+    ];
+    return console.log(totalUsuarios);
+
+}
+
+let usuarios = ['natan', 'joao'];
+let novosUsuarios = cadastrar(usuarios,'silvana','felipe');
 
 
 
