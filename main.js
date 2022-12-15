@@ -181,7 +181,7 @@ function listaNomes(...nomes){
     console.log(nomes);
 }
 
-listaNomes('natan', 'lucas', 'joao'); */
+listaNomes('natan', 'lucas', 'joao'); 
 
 //REST OPERATOR EM função
 
@@ -190,12 +190,45 @@ function cadastrar(usuarios, ...novosUsuarios){ //rest operator aqui para juntar
         ...usuarios,
         ...novosUsuarios
     ];
-    return console.log(totalUsuarios);
+    return console.log(totalUsuarios); 
+
 
 }
 
 let usuarios = ['natan', 'joao'];
 let novosUsuarios = cadastrar(usuarios,'silvana','felipe');
+*/
+
+//OPERAÇÃO EM ARRAY
+//Forma mais prática de percorrer listas de uma forma menos verbosa, ex:
+
+const lista = [1,2,3,4,5,6];
+
+//função map() serve para percorrer todos os itens da lista e retornar algo
+
+const novaLista = lista.map(function(item,index){ //item é cada um da lista / index é a posição que está passando
+    return item + index;
+});      
+console.log(novaLista) // dessa forma ele vai pegar o item, por exemplo, o 1 e vai somar com a posição 0 e assim em diante
+
+//Reduce : consegue somar todos os itens da lista
+
+const soma = lista.reduce(function(total, proximo){
+    return total + proximo; //pega o começo do total que é 0 e soma com o próximo que é 1, o total vira 1 e assim em diante
+});
+//0
+console.log(soma);
+
+//FIND : usa para achar algum item dentro do array, caso não tenha ele mostrará undefined no array
+
+const find = lista.find(function(item){
+    return item == 10
+})
+console.log(find)
+
+
+
+
 
 
 
