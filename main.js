@@ -197,7 +197,7 @@ function cadastrar(usuarios, ...novosUsuarios){ //rest operator aqui para juntar
 
 let usuarios = ['natan', 'joao'];
 let novosUsuarios = cadastrar(usuarios,'silvana','felipe');
-*/
+
 
 //OPERAÇÃO EM ARRAY
 //Forma mais prática de percorrer listas de uma forma menos verbosa, ex:
@@ -224,7 +224,34 @@ console.log(soma);
 const find = lista.find(function(item){
     return item == 10
 })
-console.log(find)
+console.log(find)  */
+
+//FUNÇÕES ANONIMAS: são funções que não dependem de nomes, somente são declaradas e armazenadas em uma variável.
+
+function adicionar(...numeros){ //usando REST
+    let total = numeros.reduce(function(total, proximo){ //função anonima dentro do reduce
+        return total + proximo;
+    })
+    console.log(total)
+}
+
+adicionar(1,2,3,4,5) 
+
+//Outra forma de reduzir ainda mais é usando arrow function
+
+function adicionar(...numeros){ 
+    let total = numeros.reduce((total, proximo) =>{  
+        let soma = total + proximo;
+        return soma;
+    })
+    console.log(total)
+}
+
+adicionar(1,2,3,4,5) 
+
+
+
+
 
 
 
