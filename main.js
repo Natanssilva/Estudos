@@ -277,7 +277,34 @@ adicionar(1,2,3,4,5)
 
                 // ! tomar cuidado com strings em minusculo ou maiusculo, ainda é CASE SENSITIVE
 
+    //Métodos SOME e EVERY , facilitam o trabalho de comparações e verificações  com arrays e arrays de objeto
 
+    //SOME: verifica se tem algum - pelo menos 1
+
+            let nomes = ['natan', 'lucas', 'matheus']
+
+            nomes.some(nomes => nomes === 'natan'); // sintaxe de função anonima - recebe callback
+    //devolve um boolean
+
+    //EVERY : devolve callback tbm mas tem todos os valores do array tem que passar na condição, diferente do some
+                
+                let nomes =[                  //Arrays de objeto
+                    {nome: 'natan', idade:17},
+                    {nome: 'luis', idade:30},
+                    {nome:'maria', idade: 20}
+                ];
+
+    nomes.every(nome => nome.idade >= 18);
+    //Verifica se TODOS são maior de 18 anos, ou seja EVERY. No exemplo, o 'natan' é de menor, logo retorna FALSE - EVERY também retorna boolean
+
+
+                //Exemplo utilizando o condicional IF
+
+    if ( nomes.every(nome => nome.idade >= 18)) {
+        console.log('Todos são maiores de 18 anos')
+    }else{
+        console.log('ALGUÉM É DE MENOR')
+    }
 
 
 
