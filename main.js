@@ -306,6 +306,14 @@ adicionar(1,2,3,4,5)
         console.log('ALGUÉM É DE MENOR')
     }
 
+    // TryCatch: basicamente diz pro javascript tentar executar um bloco de código e caso de errado, executa oque está dentro do CATCH.
+
+    try {  // SINTAXE
+        
+    } catch (error) {
+        
+    }
+
 
 
 
