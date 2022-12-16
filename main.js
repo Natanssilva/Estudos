@@ -224,7 +224,7 @@ console.log(soma);
 const find = lista.find(function(item){
     return item == 10
 })
-console.log(find)  */
+console.log(find)  
 
 //FUNÇÕES ANONIMAS: são funções que não dependem de nomes, somente são declaradas e armazenadas em uma variável.
 
@@ -247,7 +247,31 @@ function adicionar(...numeros){
     console.log(total)
 }
 
-adicionar(1,2,3,4,5) 
+adicionar(1,2,3,4,5)  */
+
+
+/*Métodos: INCLUDES(): verifica seja uma string, array, array de obj, se td q foi digitado dentro desse include possui no que está mandando. 
+    Ex: usar include para ver se tem 'lucas' no array. Em outra situação caso nao seja usado o include, teria que usar um For ou laço de repetição para percorrer todo array, oq seria menos prático*/
+                let nomes = ['felipe', 'lucas', 'natan'];
+
+                console.log(nomes.includes('lucas')) // retorna um true ou falso caso tenha ou não no array
+
+                if (nomes.includes('matheus')) {  //Pra verificar
+                    console.log('matheus está na lista')
+                }else{
+                    console.log('matheus não está na lista')
+                }
+
+    //endsWith: Verifica se um nome ou string termina com oque está passando
+                    let nome = 'matheus';
+
+                    console.log(nome.endsWith('s')) //retorna true pq a string termina com a letra S
+
+
+    //startsWith: A mesma lógica de endsWith só que verifica se começa com determinada letra, frase.
+                    console.log(nome.startsWith('math')) //retorna true pq começa com math
+
+                // ! tomar cuidado com strings em minusculo ou maiusculo, ainda é CASE SENSITIVE
 
 
 
