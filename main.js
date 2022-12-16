@@ -1,10 +1,10 @@
-/*loops
+//LOOPS
 
 x = 0;
 
-while (x <= 10) {  //while significa ENQUANTO, enquanto a condição for true acontece tal coisa
+while (x <= 10) {   //while significa ENQUANTO, enquanto a condição for true acontece tal coisa
    document.write(`<br> O valor de X é ${x}`);
-    x++; //mesma coisa de x = x + 1
+    x++;   //mesma coisa de x = x + 1
 }
 x = 1000;
 document.write(`<br><br><br> O valor de X agora é ${x}<br>`)
@@ -14,11 +14,11 @@ document.write(`<br><br><br> O valor de X agora é ${x}<br>`)
 for (let a = 0; a <= x; a++) {
     document.write(`<br>o valor do A é ${a}`);
     
-} */
+} 
 
 //Switch NÃO é um lço de repetição, o caso condicional sempre começa em 0
 
-/*
+
 document.write('<br> Escolha seu pedido: <br>')
 document.write('<br> 0 - Sorvete / 1 - Suco <br>')
 document.write('<br> 2 - Coca Cola / 3 - Água Gelada <br><br>')
@@ -55,7 +55,7 @@ var timer = setInterval(acao, 1000); //Executa de tempos em tempos
 clearInterval(timer);
 //adicionando numa variavel e depois chamando o clearInterval com parametro da variavel, o setInterval para a execução
 
-//setTimeout(acao, 3000); executa depois de tempo de execução
+setTimeout(acao, 3000); //executa depois de tempo de execução
 
 
 //WebStorage
@@ -94,7 +94,7 @@ const pessoa ={
     cargo: 'desenvolvedor'
 };
 
-let { nome } = pessoa; //Desconstruindo um objeto, pegando do obj pessoa, o elemento nome e definindo a uma variavel nome com o valor q tinha no obj pessoa 
+let { nome } = pessoa;       //Desconstruindo um objeto, pegando do obj pessoa, o elemento nome e definindo a uma variavel nome com o valor q tinha no obj pessoa 
 console.log(nome)
 
 let { sobrenome } = pessoa;
@@ -104,7 +104,7 @@ let {idade, cargo} = pessoa;
 console.log(idade, cargo)
 
 let {cargo: programador} = pessoa; //se quer q cargo nao seja o nome dessa variavel
-console.log(programador) // mostra 'desenvolvedor'
+console.log(programador)          // mostra 'desenvolvedor'
 
 
 //DESCONSTRUINDO ARRAYS
@@ -129,11 +129,12 @@ console.log(nome,idade)
 
 let primeiros = [1,2,3];
 
-//let numeros = [4,5,6];
+let numeros = [4,5,6];
 
 //Usar o spread operator para puxar o array "primeiros" para o "numeros"
 //O Spread Operator ...  junta as informações e deixa mais pratico na hr de utilizar
-let numeros = [...primeiros,4,5,6] // puxando os primeiros e juntando com o resto
+
+let numeros = [...primeiros,4,5,6]   // puxando os primeiros e juntando com o resto
 
 console.log(numeros) // Mostra [ 1, 2, 3, 4, 5, 6 ]
 
@@ -239,6 +240,7 @@ adicionar(1,2,3,4,5)
 
 //Outra forma de reduzir ainda mais é usando arrow function
 
+
 function adicionar(...numeros){ 
     let total = numeros.reduce((total, proximo) =>{  
         let soma = total + proximo;
@@ -247,29 +249,31 @@ function adicionar(...numeros){
     console.log(total)
 }
 
-adicionar(1,2,3,4,5)  */
+adicionar(1,2,3,4,5)  
 
 
 /*Métodos: INCLUDES(): verifica seja uma string, array, array de obj, se td q foi digitado dentro desse include possui no que está mandando. 
     Ex: usar include para ver se tem 'lucas' no array. Em outra situação caso nao seja usado o include, teria que usar um For ou laço de repetição para percorrer todo array, oq seria menos prático*/
+
                 let nomes = ['felipe', 'lucas', 'natan'];
 
-                console.log(nomes.includes('lucas')) // retorna um true ou falso caso tenha ou não no array
+                console.log(nomes.includes('lucas'))      //retorna um true ou falso caso tenha ou não no array
 
-                if (nomes.includes('matheus')) {  //Pra verificar
+                if (nomes.includes('matheus')) {         //Pra verificar
                     console.log('matheus está na lista')
                 }else{
                     console.log('matheus não está na lista')
                 }
 
     //endsWith: Verifica se um nome ou string termina com oque está passando
-                    let nome = 'matheus';
 
-                    console.log(nome.endsWith('s')) //retorna true pq a string termina com a letra S
+                    let nome = 'matheus';
+                    console.log(nome.endsWith('s'))     //retorna true pq a string termina com a letra S
 
 
     //startsWith: A mesma lógica de endsWith só que verifica se começa com determinada letra, frase.
-                    console.log(nome.startsWith('math')) //retorna true pq começa com math
+
+                    console.log(nome.startsWith('math'))  //retorna true pq começa com math
 
                 // ! tomar cuidado com strings em minusculo ou maiusculo, ainda é CASE SENSITIVE
 
