@@ -250,6 +250,7 @@ function adicionar(...numeros){
 adicionar(1,2,3,4,5) 
 
 //testando git
+//teste 2
 
 
 
