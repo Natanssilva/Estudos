@@ -1,8 +1,6 @@
 # Estudos sobre Javaascript
 
 ## 🚀 Tecnologias estudadas e abordadas neste repositório:
-- [HTML5] 
-- [CSS3]
 - [JAVASCRIPT]
 - [REACT]
 
