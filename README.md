@@ -1,4 +1,4 @@
-# Estudos sobre Javaascript
+# Estudos sobre Javascript
 
 ## 🚀 Tecnologias estudadas e abordadas neste repositório:
 - [JAVASCRIPT]
