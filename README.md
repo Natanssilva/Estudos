@@ -41,6 +41,7 @@
         -Manipula DOM;
         -É utilizado para construção de projetos SPA´s.
 
+<<<<<<< HEAD
 - O que são SPA´s ?
         
     -Tradicionalmente, em uma aplicação web renderizada pelo servidor, nós possivelmente teríamos um modelo MVC, e cada View deste modelo seria responsável por criar uma tela. Um exemplo clássico de uma aplicação web. Uma SPA é uma forma diferente de trabalhar com uma aplicação.
@@ -52,5 +53,25 @@
 
 
 
+=======
+    - O que são SPA´s ?
+
+        -Tradicionalmente, em uma aplicação web renderizada pelo servidor, nós possivelmente teríamos um modelo MVC, e cada View deste modelo seria responsável por criar uma tela. Um exemplo clássico de uma aplicação web. Uma SPA é uma forma diferente de trabalhar com uma aplicação.
+
+        -Com essa tecnologia, temos apenas uma página principal e todas as outras serão escritas e modificadas pelo JavaScript.
+            
+         -De acordo com essa abordagem: O Back-End ao invés de retornar o próprio HTML formatado, retorna os dados no formato JSON. Essas são as nossas  
+
+# Como criar um projeto em React?
+    -Baixar NodeJS, junto ao NPM (Node package Manager), gerenciador de pacotes.
+    -Pode criar a partir do CMD dentro da pasta de preferência.
+    -Pode criar pelo terminal do editor de código(IDE) dentro da pasta de preferência.
+
+    -COMANDO:
+
+        -npx create-react-app my-app
+        -cd my-app
+        -npm start    (para rodar localmente no navegador)
+>>>>>>> 17237b2 (projeto react)
 
 
