@@ -74,4 +74,3 @@
         -npm start    (para rodar localmente no navegador)
 >>>>>>> 17237b2 (projeto react)
 
-
