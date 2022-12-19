@@ -20,6 +20,7 @@
     
             COMANDOS PARA RESOLVER:
             
+    - git remote rm origin
     - git pull --rebase origin main // caso esteja na main
     - git push -u origin main // processo normal para finalizar
 
