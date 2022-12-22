@@ -74,9 +74,9 @@
  # Entendendo props e componentes em ReactJS
 
     -Componentes são como funções Javascript. Aceitam entradas arbitrárias chamadas "props" e retornam elementos React que descrevem oque deve aparecer na tela.
-        -Componentes mais usados:
-            -Componentes de classe (class component)
-            -componente funcional sem estado(state)
+    -Componentes mais usados:
+        -Componentes de classe (class component)
+        -componente funcional sem estado(state)
 
 
 
