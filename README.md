@@ -71,7 +71,7 @@
         -cd my-app
         -npm start    (para criar um servidor local no navegador)
 
-    # Entendendo props e componentes em ReactJS
+ # Entendendo props e componentes em ReactJS
 
     -Componentes são como funções Javascript. Aceitam entradas arbitrárias chamadas "props" e retornam elementos React que descrevem oque deve aparecer na tela.
         -Componentes mais usados:
