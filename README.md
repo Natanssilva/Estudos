@@ -57,26 +57,19 @@
 
     -Com essa tecnologia, temos apenas uma página principal e todas as outras serão escritas e modificadas pelo JavaScript.
             
-<<<<<<< HEAD
      -De acordo com essa abordagem: O Back-End ao invés de retornar o próprio HTML formatado, retorna os dados no formato JSON. Essas são as nossas                  famosas API's. E assim, o Back-End fica totalmente separado do Front-End. 
 
 # Como criar um projeto em React?
-=======
-     -De acordo com essa abordagem: O Back-End ao invés de retornar o próprio HTML formatado, retorna os dados no formato JSON. Essas são as nossas                  famosas API's. E assim, o Back-End fica totalmente separado do Front-End.
 
-     # Como criar um projeto em React?
->>>>>>> eb509f5 (props e components)
-    -Baixar NodeJS, junto ao NPM (Node package Manager), gerenciador de pacotes.
-    -Pode criar a partir do CMD dentro da pasta de preferência.
-    -Pode criar pelo terminal do editor de código(IDE) dentro da pasta de preferência.
+        -Baixar NodeJS, junto ao NPM (Node package Manager), gerenciador de pacotes.
+        -Pode criar a partir do CMD dentro da pasta de preferência.
+        -Pode criar pelo terminal do editor de código(IDE) dentro da pasta de preferência.
 
     -COMANDO:
 
         -npx create-react-app my-app
         -cd my-app
         -npm start    (para criar um servidor local no navegador)
-<<<<<<< HEAD
-=======
 
     # Entendendo props e componentes em ReactJS
 
@@ -88,7 +81,7 @@
 
 
 
->>>>>>> eb509f5 (props e components)
+
 
 
 
