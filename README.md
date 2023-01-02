@@ -9,7 +9,21 @@
 - Repositório criado com finalidade didática, onde contém arquivos com explicações de sintaxe sobre a linguagem Javascript. Posteriormente conceitos de React JS também estarão aqui no repositório!
 - Este repositporio também serve para praticar e estudar sobre versionamento com GIT
 
-## 📝 Comandos GIT para criar um novo repositório na linha de comando:
+## Um pouco sobre GIT:
+
+-Branch: é basicamente uma ramificação do projeto. Como se fossem linhas cronológicas mas NÃO necessariamente precisa continuar na mesma linha cronológica o projeto inteiro.
+
+-Commit: é como se você estivesse falando para o GIT que é uma nova alteração/modificação do projeto. Como se estivesse salvando uma nova versão do projeto, por isso é interessante colocar nome nos commits.
+
+-Merge: Junção da branch "alternativa" com a principal. Por exemplo, digamos que você criou uma branch (ramificação) fora da sua linha cronológica principal, ao utilizar o merge irá unir a ramificação com a linha principal do projeto ou até mesmo usar o Merge para unir uma ramificação com outra ramificação sem ser que sejam a linha prinicipal. Muito útil para alterar o mesmo arquivo que outra pessoa e ambas alterações serem salvas.
+
+-Remote: faz com que o repositório da máquina vá para a plataforma que você queira hospedar, no caso atual, o Github. Por isso ao usar remote deve referenciar o link do repositório para assim, fazer essa conexão.
+
+-Push: utilizado para colocar o commit que foi feito na máquina no remote, ou seja, no Github e assim irá alterar no site.
+
+-Pull: utilizado para puxar oque está la no repositório do Github para sua máquina, exatamente ao contrário do Push.
+
+# 📝 Comandos GIT para criar um novo repositório na linha de comando:
     - echo "# nome-rep" >> README.md
     - git init
     - git add README.md  (opcional)
