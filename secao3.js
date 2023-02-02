@@ -13,7 +13,7 @@
 
         **  retornam valores boolean - true or false
 */
-
+/*
 const num1 = 10;
 const num2 = '10';
 const comp = num1 == num2;
@@ -40,6 +40,8 @@ const num8 = '10';
 const comp3 = num7 !== num8; // retorna true pq são diferentes no tipo e no valor
 console.log(comp3);
 
+*/
+
 
 /* 
     Operadores Lógicos
@@ -54,17 +56,39 @@ console.log(comp3);
 
 */
 
-const expressaoAND = true && true && false;
-const expressaoOR = true || false;
+//const expressaoAND = true && true && false;
+//const expressaoOR = true || false;
 
-console.log(expressaoOR);
+//console.log(expressaoOR);
 
-console.log(!true); // retorna false pq está negando o true e inverte
-console.log(!!true); // não é muito comum mas negaria uma segunda vez, no caso retorna true 
+//console.log(!true); // retorna false pq está negando o true e inverte
+//console.log(!!true); // não é muito comum mas negaria uma segunda vez, no caso retorna true 
 
 
 /*
     && -> false && true -> false  "valor"
-    ||  -> 
-
+    ||  -> true || true  -> vai retornar o valor verdadeiro
+    
+    FALSY ---- Qualquer coisa além dos itens abaixo, avalia true em javascript, logo no console abaixo, será imprimido no console um desses valores, no caso undefined
+    false --> falso literal
+    0
+    '' "" ` `
+    null/undefined
+    NaN
 */
+
+//console.log('Luiz' &&  NaN && 'maria');
+
+/*function falaOI (){
+    return 'OI';
+}
+
+let executa = 'JOAZINHO DA ESQUINA';
+
+console.log(executa && falaOI());  */
+
+console.log(0 || false || null || 'Luiz' || true); // OR precisa de apenas um valor verdadeiro para retornar o valor verdeiro
+
+
+
+ 
