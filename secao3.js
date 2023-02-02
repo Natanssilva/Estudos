@@ -87,7 +87,7 @@ let executa = 'JOAZINHO DA ESQUINA';
 
 console.log(executa && falaOI());  */
 
-console.log(0 || false || null || 'Luiz' || true); // OR precisa de apenas um valor verdadeiro para retornar o valor verdeiro
+console.log(0 || false || null || 'Luiz' || true); // OR precisa de apenas um valor verdadeiro para retornar o valor verdeiro diferente do AND
 
 
 
